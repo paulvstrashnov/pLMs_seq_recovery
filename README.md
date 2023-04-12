@@ -5,6 +5,7 @@
 ```bash
 wget https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot.fasta.gz
 ```
+![Распределение длин последовательностей в датасете](https://web.expasy.org/docs/relnotes/relstat6.gif)
 
 ### Сформировать свой датасет:
 ```bash
