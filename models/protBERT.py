@@ -26,7 +26,7 @@ class ProtBERTModel(ProteinModel):
         with torch.no_grad():
             embedding = self.encoder(input_ids).last_hidden_state
 
-        return embedding
+        return embedding # torch.Size([1, seq_len+2, 1024])
 
     def decode(self, embedding):
         # Pass the embeddings through the decoder
