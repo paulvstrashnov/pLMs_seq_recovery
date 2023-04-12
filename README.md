@@ -26,6 +26,15 @@ python main.py --models ESM2_8M --data_path data/sample-100000_min128_max384.fas
 ```bash
 python main.py --models ESM2_8M,ProtBERTModel --data_path data/sample_28356.fasta --batch_size 32 --num_workers 4 --log_file ESM2_8M-ProtBERTModel.log --device cuda:1
 ```
+|Model|Embedding dim|
+|---|:-:|
+|ESM2_8M|320|
+|ESM2_35M|480|
+|ESM2_150M|640|
+|ESM2_650M|1280|
+|ESM2_3B|2560|
+|ESM2_15B|5120|
+|ProtBERT|1024|
 
 ## Results
 - Mean Levenstein - среднее расстояние Левенштейна на датасете.
@@ -38,7 +47,7 @@ python main.py --models ESM2_8M,ProtBERTModel --data_path data/sample_28356.fast
 ### Результаты для датасета sample_28356.fasta
 sample_28356.fasta - 5% от Uniprot/SwissProt, длина сиквенсов ограничена 256, отсутсвуют нестандартные аминокислоты.
 |Model|Mean Levenstein|Mean Normalized Levenstein|dNW|
-|---|---|---|---|
+|---|:-:|:-:|:-:|
 |Prot_T5|0.0|0.0|0.0|
 |ESM2_8M|3.27|0.01|-26.00|
 |ESM2_8M_dec*|3.33|0.02|-29.65|
