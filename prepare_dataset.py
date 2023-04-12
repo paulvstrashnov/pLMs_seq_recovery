@@ -57,4 +57,4 @@ def get_sample_from_fasta_by_min_and_max_lengths(name = 'sample', min_seq_length
 if __name__ == '__main__':
     #get_sample_from_fasta_by_min_length(name = '100k', min_seq_length=256, sample_size=100000)
     #get_sample_from_fasta_by_min_and_max_lengths()
-    get_sample_from_fasta_by_min_and_max_lengths(name = 'sample', min_seq_length=128, max_seq_length=256, sample_size=5)
+    get_sample_from_fasta_by_min_and_max_lengths(name = 'sample', min_seq_length=128, max_seq_length=384, sample_size=100000)
